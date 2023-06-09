@@ -120,16 +120,11 @@ groups:
                         redirect:
                             code: 302
                             url: www.de.frw.cloud.spryker.toys
-                    www.de.frw.cloud.spryker.toys:
+                    at.frw.cloud.spryker.toys:
                         store: DE
                         redirect:
                             code: 302
-                            url: www.de.frw.cloud.spryker.toys
-                    backoffice.de.frw.cloud.spryker.toys:
-                        store: DE
-                        redirect:
-                            code: 302
-                            url: backoffice.de.frw.cloud.spryker.toys
+                            url: www.at.frw.cloud.spryker.toys
             yves:
                 application: yves
                 endpoints:
