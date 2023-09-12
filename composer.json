@@ -269,9 +269,6 @@
         "post-install-cmd": [
             "ChromedriverInstaller\\Installer::installChromedriver"
         ],
-        "post-update-cmd": [
-            "ChromedriverInstaller\\Installer::installChromedriver"
-        ],
         "phpstan": [
             "php -d memory_limit=1024M vendor/bin/phpstan analyze -c phpstan.neon src/ -l 5"
         ],
