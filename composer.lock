@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "254e2d597f41be02e556600f5a433409",
+    "content-hash": "fe9b9075a940bf9530d581d183ff8113",
     "packages": [
         {
             "name": "async-aws/core",
@@ -53134,65 +53134,6 @@
                 }
             ],
             "time": "2022-05-25T10:58:12+00:00"
-        },
-        {
-            "name": "sllh/composer-versions-check",
-            "version": "v2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/soullivaneuh/composer-versions-check.git",
-                "reference": "f86f69b25fd029466e3ca16036dfcac78a5f1ce3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/soullivaneuh/composer-versions-check/zipball/f86f69b25fd029466e3ca16036dfcac78a5f1ce3",
-                "reference": "f86f69b25fd029466e3ca16036dfcac78a5f1ce3",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^2.0",
-                "composer/semver": "^3.2.5",
-                "php": "^7.4 || ^8.0",
-                "symfony/console": "^3.4 || ^4.4 || ^5.0"
-            },
-            "require-dev": {
-                "composer/composer": "^2.0",
-                "symfony/phpunit-bridge": "^5.3.3"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "SLLH\\ComposerVersionsCheck\\VersionsCheckPlugin",
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "SLLH\\ComposerVersionsCheck\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sullivan SENECHAL",
-                    "email": "soullivaneuh@gmail.com"
-                }
-            ],
-            "description": "Checks if packages are up to date to last major versions after update",
-            "keywords": [
-                "composer",
-                "plugin",
-                "update",
-                "versions"
-            ],
-            "support": {
-                "issues": "https://github.com/soullivaneuh/composer-versions-check/issues",
-                "source": "https://github.com/soullivaneuh/composer-versions-check/tree/v2.0.5"
-            },
-            "time": "2021-07-12T14:38:48+00:00"
         },
         {
             "name": "softcreatr/jsonpath",
