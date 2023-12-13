@@ -16795,16 +16795,16 @@
         },
         {
             "name": "spryker/chart",
-            "version": "1.4.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/chart.git",
-                "reference": "095eb5c356c8513f5def6199a25e7ac487b7e111"
+                "reference": "6ef5f10dce957fa606fbae1bcce96618aa90ec15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/chart/zipball/095eb5c356c8513f5def6199a25e7ac487b7e111",
-                "reference": "095eb5c356c8513f5def6199a25e7ac487b7e111",
+                "url": "https://api.github.com/repos/spryker/chart/zipball/6ef5f10dce957fa606fbae1bcce96618aa90ec15",
+                "reference": "6ef5f10dce957fa606fbae1bcce96618aa90ec15",
                 "shasum": ""
             },
             "require": {
@@ -16841,9 +16841,9 @@
             ],
             "description": "Chart module",
             "support": {
-                "source": "https://github.com/spryker/chart/tree/1.4.0"
+                "source": "https://github.com/spryker/chart/tree/1.6.1"
             },
-            "time": "2023-04-06T11:39:54+00:00"
+            "time": "2023-11-02T15:37:09+00:00"
         },
         {
             "name": "spryker/chart-gui",
@@ -57647,5 +57647,5 @@
     "platform-overrides": {
         "php": "8.0.9"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
