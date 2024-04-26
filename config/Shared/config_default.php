@@ -714,6 +714,14 @@ $config[MessageBrokerConstants::MESSAGE_TO_CHANNEL_MAP] = [
     OrderStatusChangedTransfer::class => 'order-events',
     SearchEndpointAvailableTransfer::class => 'search-commands',
     SearchEndpointRemovedTransfer::class => 'search-commands',
+    \Generated\Shared\Transfer\AddPaymentMethodTransfer::class => 'payment-method-commands',
+    \Generated\Shared\Transfer\DeletePaymentMethodTransfer::class => 'payment-method-commands',
+    \Generated\Shared\Transfer\PaymentAuthorizedTransfer::class => 'payment-events',
+    \Generated\Shared\Transfer\PaymentAuthorizationFailedTransfer::class => 'payment-events',
+    \Generated\Shared\Transfer\PaymentCapturedTransfer::class => 'payment-events',
+    \Generated\Shared\Transfer\PaymentCaptureFailedTransfer::class => 'payment-events',
+    \Generated\Shared\Transfer\PaymentCanceledTransfer::class => 'payment-events',
+    \Generated\Shared\Transfer\PaymentCancellationFailedTransfer::class => 'payment-events',
 ];
 
 $config[MessageBrokerConstants::CHANNEL_TO_TRANSPORT_MAP] = [
@@ -797,3 +805,20 @@ $config[GlueJsonApiConventionConstants::GLUE_DOMAIN] = sprintf(
     $sprykerGlueStorefrontHost ?: $sprykerGlueBackendHost ?: 'localhost',
 );
 $config[GlueStorefrontApiApplicationConstants::GLUE_STOREFRONT_CORS_ALLOW_ORIGIN] = getenv('SPRYKER_GLUE_APPLICATION_CORS_ALLOW_ORIGIN') ?: '*';
+
+$config[\Spryker\Shared\Payment\PaymentConstants::TENANT_IDENTIFIER] = getenv('SPRYKER_TENANT_IDENTIFIER') ?: '';
+
+$config[\Spryker\Shared\MessageBrokerAws\MessageBrokerAwsConstants::MESSAGE_TO_CHANNEL_MAP] = [
+    \Generated\Shared\Transfer\AddPaymentMethodTransfer::class => 'payment-method-commands',
+    \Generated\Shared\Transfer\DeletePaymentMethodTransfer::class => 'payment-method-commands',
+    \Generated\Shared\Transfer\PaymentAuthorizedTransfer::class => 'payment-events',
+    \Generated\Shared\Transfer\PaymentAuthorizationFailedTransfer::class => 'payment-events',
+    \Generated\Shared\Transfer\PaymentCapturedTransfer::class => 'payment-events',
+    \Generated\Shared\Transfer\PaymentCaptureFailedTransfer::class => 'payment-events',
+    \Generated\Shared\Transfer\PaymentCanceledTransfer::class => 'payment-events',
+    \Generated\Shared\Transfer\PaymentCancellationFailedTransfer::class => 'payment-events',
+];
+
+$config[\Spryker\Shared\Product\ProductConstants::TENANT_IDENTIFIER] = getenv('SPRYKER_TENANT_IDENTIFIER') ?: '';
+
+$config[\Spryker\Shared\Product\ProductConstants::PUBLISHING_TO_MESSAGE_BROKER_ENABLED] = $config[\Spryker\Shared\MessageBroker\MessageBrokerConstants::IS_ENABLED];
