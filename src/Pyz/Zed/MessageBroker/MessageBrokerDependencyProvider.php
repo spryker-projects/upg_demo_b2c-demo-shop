@@ -20,23 +20,13 @@ use Spryker\Zed\MessageBrokerAws\Communication\Plugin\MessageBroker\Sender\AwsSn
 use Spryker\Zed\MessageBrokerAws\Communication\Plugin\MessageBroker\Sender\AwsSqsMessageSenderPlugin;
 use Spryker\Zed\MessageBrokerAws\Communication\Plugin\MessageBroker\Sender\HttpMessageSenderPlugin;
 use Spryker\Zed\OauthClient\Communication\Plugin\MessageBroker\AccessTokenMessageAttributeProviderPlugin;
-use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentCancelReservationFailedMessageHandlerPlugin;
-use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentConfirmationFailedMessageHandlerPlugin;
-use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentConfirmedMessageHandlerPlugin;
-use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentMethodAddedMessageHandlerPlugin;
-use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentMethodDeletedMessageHandlerPlugin;
-use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentPreauthorizationFailedMessageHandlerPlugin;
-use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentPreauthorizedMessageHandlerPlugin;
-use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentRefundedMessageHandlerPlugin;
-use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentRefundFailedMessageHandlerPlugin;
-use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentReservationCanceledMessageHandlerPlugin;
-use Spryker\Zed\Product\Communication\Plugin\MessageBroker\InitializeProductExportMessageHandlerPlugin;
+use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentMethodMessageHandlerPlugin;
+use Spryker\Zed\Payment\Communication\Plugin\MessageBroker\PaymentOperationsMessageHandlerPlugin;
+use Spryker\Zed\Product\Communication\Plugin\MessageBroker\ProductExportMessageHandlerPlugin;
 use Spryker\Zed\ProductReview\Communication\Plugin\MessageBroker\ProductReviewAddReviewsMessageHandlerPlugin;
 use Spryker\Zed\SearchHttp\Communication\Plugin\MessageBroker\SearchEndpointAvailableMessageHandlerPlugin;
 use Spryker\Zed\SearchHttp\Communication\Plugin\MessageBroker\SearchEndpointRemovedMessageHandlerPlugin;
 use Spryker\Zed\Session\Communication\Plugin\MessageBroker\SessionTrackingIdMessageAttributeProviderPlugin;
-use Spryker\Zed\Store\Communication\Plugin\MessageBroker\CurrentStoreReferenceMessageAttributeProviderPlugin;
-use Spryker\Zed\Store\Communication\Plugin\MessageBroker\StoreReferenceMessageValidatorPlugin;
 
 class MessageBrokerDependencyProvider extends SprykerMessageBrokerDependencyProvider
 {
@@ -68,23 +58,15 @@ class MessageBrokerDependencyProvider extends SprykerMessageBrokerDependencyProv
     public function getMessageHandlerPlugins(): array
     {
         return [
-            new PaymentCancelReservationFailedMessageHandlerPlugin(),
-            new PaymentConfirmationFailedMessageHandlerPlugin(),
-            new PaymentConfirmedMessageHandlerPlugin(),
-            new PaymentPreauthorizationFailedMessageHandlerPlugin(),
-            new PaymentPreauthorizedMessageHandlerPlugin(),
-            new PaymentReservationCanceledMessageHandlerPlugin(),
-            new PaymentRefundedMessageHandlerPlugin(),
-            new PaymentRefundFailedMessageHandlerPlugin(),
-            new PaymentMethodAddedMessageHandlerPlugin(),
-            new PaymentMethodDeletedMessageHandlerPlugin(),
             new AssetAddedMessageHandlerPlugin(),
             new AssetUpdatedMessageHandlerPlugin(),
             new AssetDeletedMessageHandlerPlugin(),
-            new InitializeProductExportMessageHandlerPlugin(),
             new ProductReviewAddReviewsMessageHandlerPlugin(),
             new SearchEndpointAvailableMessageHandlerPlugin(),
             new SearchEndpointRemovedMessageHandlerPlugin(),
+            new PaymentMethodMessageHandlerPlugin(),
+            new PaymentOperationsMessageHandlerPlugin(),
+            new ProductExportMessageHandlerPlugin(),
         ];
     }
 
@@ -96,7 +78,6 @@ class MessageBrokerDependencyProvider extends SprykerMessageBrokerDependencyProv
         return [
             new CorrelationIdMessageAttributeProviderPlugin(),
             new TimestampMessageAttributeProviderPlugin(),
-            new CurrentStoreReferenceMessageAttributeProviderPlugin(),
             new AccessTokenMessageAttributeProviderPlugin(),
             new TransactionIdMessageAttributeProviderPlugin(),
             new SessionTrackingIdMessageAttributeProviderPlugin(),
@@ -110,16 +91,6 @@ class MessageBrokerDependencyProvider extends SprykerMessageBrokerDependencyProv
     {
         return [
             new ValidationMiddlewarePlugin(),
-        ];
-    }
-
-    /**
-     * @return array<\Spryker\Zed\MessageBrokerExtension\Dependency\Plugin\MessageValidatorPluginInterface>
-     */
-    public function getExternalValidatorPlugins(): array
-    {
-        return [
-            new StoreReferenceMessageValidatorPlugin(),
         ];
     }
 }
