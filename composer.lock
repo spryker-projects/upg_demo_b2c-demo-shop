@@ -27834,16 +27834,16 @@
         },
         {
             "name": "spryker/kernel",
-            "version": "3.74.2",
+            "version": "3.74.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/kernel.git",
-                "reference": "f97ac1b812cff92e188a75106dab022585399ccc"
+                "reference": "584c590a5cf4d2223f7102cbe4817abd496d3732"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/kernel/zipball/f97ac1b812cff92e188a75106dab022585399ccc",
-                "reference": "f97ac1b812cff92e188a75106dab022585399ccc",
+                "url": "https://api.github.com/repos/spryker/kernel/zipball/584c590a5cf4d2223f7102cbe4817abd496d3732",
+                "reference": "584c590a5cf4d2223f7102cbe4817abd496d3732",
                 "shasum": ""
             },
             "require": {
@@ -27889,9 +27889,9 @@
             ],
             "description": "Kernel module",
             "support": {
-                "source": "https://github.com/spryker/kernel/tree/3.74.2"
+                "source": "https://github.com/spryker/kernel/tree/3.74.3"
             },
-            "time": "2024-05-14T13:42:43+00:00"
+            "time": "2024-05-20T17:36:41+00:00"
         },
         {
             "name": "spryker/key-builder",
