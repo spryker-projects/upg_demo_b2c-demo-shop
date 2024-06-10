@@ -3050,3 +3050,5 @@ category.validation.category_node_entity_not_found,The category node ID '%catego
 category.validation.category_node_entity_not_found,"Die Kategorieknoten-ID '%category_node_id%' kann nicht verschoben werden, da dieser Kategorieknoten nicht mehr existiert.",de_DE
 dynamic_entity.validation.invalid_url,The URL is invalid. `%errorPath%` field '%fieldName%' must have a URL data format.,en_US
 dynamic_entity.validation.invalid_url,Die URL ist ungültig. `%errorPath%` Feld '%fieldName%' muss ein URL-Datenformat haben.,de_DE
+dynamic_entity.validation.persistence_failed_not_nullable_field,Failed to persist the data for `%errorPath%`. Please verify the provided data and try again. Field must not be null.,en_US
+dynamic_entity.validation.persistence_failed_not_nullable_field,Das Speichern der Daten ist fehlgeschlagen für `%errorPath%`. Bitte überprüfen Sie die bereitgestellten Daten und versuchen Sie es erneut. Das Feld darf nicht null sein.,de_DE
