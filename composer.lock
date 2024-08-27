@@ -24040,16 +24040,16 @@
         },
         {
             "name": "spryker/data-export",
-            "version": "0.1.4",
+            "version": "0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/data-export.git",
-                "reference": "79a3ca33d5abd0e2737e39e3529c3183d93b0d11"
+                "reference": "3a43a7999503037006d4b989285eef9341e2987a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/data-export/zipball/79a3ca33d5abd0e2737e39e3529c3183d93b0d11",
-                "reference": "79a3ca33d5abd0e2737e39e3529c3183d93b0d11",
+                "url": "https://api.github.com/repos/spryker/data-export/zipball/3a43a7999503037006d4b989285eef9341e2987a",
+                "reference": "3a43a7999503037006d4b989285eef9341e2987a",
                 "shasum": ""
             },
             "require": {
@@ -24084,9 +24084,9 @@
             ],
             "description": "DataExport module",
             "support": {
-                "source": "https://github.com/spryker/data-export/tree/0.1.4"
+                "source": "https://github.com/spryker/data-export/tree/0.1.5"
             },
-            "time": "2023-11-23T15:03:23+00:00"
+            "time": "2024-05-27T13:08:39+00:00"
         },
         {
             "name": "spryker/data-export-extension",
