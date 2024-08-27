@@ -46701,16 +46701,16 @@
         },
         {
             "name": "spryker/tax-app",
-            "version": "0.3.5",
+            "version": "0.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/tax-app.git",
-                "reference": "65a544eb254b9be050b6d81bd9700c477958c469"
+                "reference": "0ff01aa74f843773cb62d0948d65ad78581b3df0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/tax-app/zipball/65a544eb254b9be050b6d81bd9700c477958c469",
-                "reference": "65a544eb254b9be050b6d81bd9700c477958c469",
+                "url": "https://api.github.com/repos/spryker/tax-app/zipball/0ff01aa74f843773cb62d0948d65ad78581b3df0",
+                "reference": "0ff01aa74f843773cb62d0948d65ad78581b3df0",
                 "shasum": ""
             },
             "require": {
@@ -46767,9 +46767,9 @@
             ],
             "description": "TaxApp module",
             "support": {
-                "source": "https://github.com/spryker/tax-app/tree/0.3.5"
+                "source": "https://github.com/spryker/tax-app/tree/0.3.6"
             },
-            "time": "2024-05-16T15:27:34+00:00"
+            "time": "2024-06-05T13:22:04+00:00"
         },
         {
             "name": "spryker/tax-app-extension",
