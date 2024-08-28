@@ -20130,16 +20130,16 @@
         },
         {
             "name": "spryker/cms-slot-block-gui",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/cms-slot-block-gui.git",
-                "reference": "d827d12986f2995ed7675acb097f8aa9e8b93274"
+                "reference": "b5e0c98eec5ee053cdbd79f7639761b6bf034efe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/cms-slot-block-gui/zipball/d827d12986f2995ed7675acb097f8aa9e8b93274",
-                "reference": "d827d12986f2995ed7675acb097f8aa9e8b93274",
+                "url": "https://api.github.com/repos/spryker/cms-slot-block-gui/zipball/b5e0c98eec5ee053cdbd79f7639761b6bf034efe",
+                "reference": "b5e0c98eec5ee053cdbd79f7639761b6bf034efe",
                 "shasum": ""
             },
             "require": {
@@ -20174,9 +20174,9 @@
             ],
             "description": "CmsSlotBlockGui module",
             "support": {
-                "source": "https://github.com/spryker/cms-slot-block-gui/tree/1.3.0"
+                "source": "https://github.com/spryker/cms-slot-block-gui/tree/1.3.1"
             },
-            "time": "2023-11-02T20:09:27+00:00"
+            "time": "2024-06-03T17:19:13+00:00"
         },
         {
             "name": "spryker/cms-slot-block-gui-extension",
