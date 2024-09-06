@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b3f6e88d763a8921045bfed39ee07ae",
+    "content-hash": "8923894a4347010c7ad7d083454fc881",
     "packages": [
         {
             "name": "async-aws/core",
@@ -16792,16 +16792,16 @@
         },
         {
             "name": "spryker/cms",
-            "version": "7.11.2",
+            "version": "7.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/cms.git",
-                "reference": "50a984320d0976c4f919d8ef02f7a9a3b75dd6c6"
+                "reference": "901662d38638a67933f45efd111556bc3116c370"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/cms/zipball/50a984320d0976c4f919d8ef02f7a9a3b75dd6c6",
-                "reference": "50a984320d0976c4f919d8ef02f7a9a3b75dd6c6",
+                "url": "https://api.github.com/repos/spryker/cms/zipball/901662d38638a67933f45efd111556bc3116c370",
+                "reference": "901662d38638a67933f45efd111556bc3116c370",
                 "shasum": ""
             },
             "require": {
@@ -16809,7 +16809,7 @@
                 "spryker/category": "^3.0.0 || ^4.0.0 || ^5.0.0",
                 "spryker/cms-extension": "^1.1.0",
                 "spryker/glossary": "^3.1.0",
-                "spryker/gui": "^3.42.0",
+                "spryker/gui": "^3.48.0",
                 "spryker/kernel": "^3.30.0",
                 "spryker/locale": "^3.0.0",
                 "spryker/propel-orm": "^1.0.0",
@@ -16856,9 +16856,9 @@
             ],
             "description": "Cms module",
             "support": {
-                "source": "https://github.com/spryker/cms/tree/7.11.2"
+                "source": "https://github.com/spryker/cms/tree/7.12.0"
             },
-            "time": "2022-12-29T12:04:01+00:00"
+            "time": "2023-03-13T13:20:27+00:00"
         },
         {
             "name": "spryker/cms-block",
@@ -17086,23 +17086,23 @@
         },
         {
             "name": "spryker/cms-block-gui",
-            "version": "2.9.0",
+            "version": "2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/cms-block-gui.git",
-                "reference": "3a1deae431f0089142602db60fd0b6a0691d21d5"
+                "reference": "90391049ef610848c8a5a134479ff48572c06902"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/cms-block-gui/zipball/3a1deae431f0089142602db60fd0b6a0691d21d5",
-                "reference": "3a1deae431f0089142602db60fd0b6a0691d21d5",
+                "url": "https://api.github.com/repos/spryker/cms-block-gui/zipball/90391049ef610848c8a5a134479ff48572c06902",
+                "reference": "90391049ef610848c8a5a134479ff48572c06902",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4",
+                "php": ">=8.0",
                 "spryker/cms-block": "^2.0.0 || ^3.0.0",
                 "spryker/cms-block-gui-extension": "^1.0.0",
-                "spryker/gui": "^3.45.0",
+                "spryker/gui": "^3.48.0",
                 "spryker/kernel": "^3.52.0",
                 "spryker/locale": "^3.0.0",
                 "spryker/propel-orm": "^1.0.0",
@@ -17143,9 +17143,9 @@
             ],
             "description": "CmsBlockGui module",
             "support": {
-                "source": "https://github.com/spryker/cms-block-gui/tree/2.9.0"
+                "source": "https://github.com/spryker/cms-block-gui/tree/2.10.0"
             },
-            "time": "2022-09-19T06:48:51+00:00"
+            "time": "2023-03-13T13:20:27+00:00"
         },
         {
             "name": "spryker/cms-block-gui-extension",
@@ -17819,25 +17819,25 @@
         },
         {
             "name": "spryker/cms-gui",
-            "version": "5.10.0",
+            "version": "5.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/cms-gui.git",
-                "reference": "4febe0821cfaeab2316efa54151a2583047245f2"
+                "reference": "2050c26c2fbfda84737b7d51c559c6c338abfb72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/cms-gui/zipball/4febe0821cfaeab2316efa54151a2583047245f2",
-                "reference": "4febe0821cfaeab2316efa54151a2583047245f2",
+                "url": "https://api.github.com/repos/spryker/cms-gui/zipball/2050c26c2fbfda84737b7d51c559c6c338abfb72",
+                "reference": "2050c26c2fbfda84737b7d51c559c6c338abfb72",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4",
+                "php": ">=8.0",
                 "spryker/application": "^3.2.0",
                 "spryker/cms": "^7.0.0",
                 "spryker/cms-gui-extension": "^1.0.0",
                 "spryker/glossary": "^3.0.0",
-                "spryker/gui": "^3.45.0",
+                "spryker/gui": "^3.48.0",
                 "spryker/kernel": "^3.52.0",
                 "spryker/locale": "^3.0.0",
                 "spryker/symfony": "^3.0.0",
@@ -17877,9 +17877,9 @@
             ],
             "description": "CmsGui module",
             "support": {
-                "source": "https://github.com/spryker/cms-gui/tree/5.10.0"
+                "source": "https://github.com/spryker/cms-gui/tree/5.11.0"
             },
-            "time": "2022-09-19T06:48:51+00:00"
+            "time": "2023-03-13T13:20:27+00:00"
         },
         {
             "name": "spryker/cms-gui-extension",
@@ -55575,5 +55575,5 @@
     "platform-overrides": {
         "php": "8.0.9"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
