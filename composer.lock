@@ -25015,16 +25015,16 @@
         },
         {
             "name": "spryker/gui",
-            "version": "3.49.0",
+            "version": "3.49.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/gui.git",
-                "reference": "aed54705ec1480550842ff8db6c25dae5dd795d2"
+                "reference": "e9f0c145a7064d1bbdbf6ac89a7295b21bed3632"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/gui/zipball/aed54705ec1480550842ff8db6c25dae5dd795d2",
-                "reference": "aed54705ec1480550842ff8db6c25dae5dd795d2",
+                "url": "https://api.github.com/repos/spryker/gui/zipball/e9f0c145a7064d1bbdbf6ac89a7295b21bed3632",
+                "reference": "e9f0c145a7064d1bbdbf6ac89a7295b21bed3632",
                 "shasum": ""
             },
             "require": {
@@ -25048,6 +25048,7 @@
                 "spryker/container": "*",
                 "spryker/propel": "*",
                 "spryker/silex": "*",
+                "spryker/store": "*",
                 "spryker/testify": "*"
             },
             "suggest": {
@@ -25072,9 +25073,9 @@
             ],
             "description": "Gui module",
             "support": {
-                "source": "https://github.com/spryker/gui/tree/3.49.0"
+                "source": "https://github.com/spryker/gui/tree/3.49.2"
             },
-            "time": "2023-03-13T18:17:58+00:00"
+            "time": "2023-04-06T07:25:58+00:00"
         },
         {
             "name": "spryker/guzzle",
