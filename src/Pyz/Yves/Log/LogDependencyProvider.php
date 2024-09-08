@@ -7,9 +7,13 @@
 
 namespace Pyz\Yves\Log;
 
+use Spryker\Yves\Customer\Plugin\Log\CurrentCustomerDataRequestProcessorPlugin;
 use Spryker\Yves\Log\LogDependencyProvider as SprykerLogDependencyProvider;
 use Spryker\Yves\Log\Plugin\Handler\ExceptionStreamHandlerPlugin;
 use Spryker\Yves\Log\Plugin\Handler\StreamHandlerPlugin;
+use Spryker\Yves\Log\Plugin\Log\AuditLogMetaDataProcessorPlugin;
+use Spryker\Yves\Log\Plugin\Log\AuditLogRequestProcessorPlugin;
+use Spryker\Yves\Log\Plugin\Log\AuditLogTagFilterBufferedStreamHandlerPlugin;
 use Spryker\Yves\Log\Plugin\Processor\EnvironmentProcessorPlugin;
 use Spryker\Yves\Log\Plugin\Processor\GuzzleBodyProcessorPlugin;
 use Spryker\Yves\Log\Plugin\Processor\PsrLogMessageProcessorPlugin;
@@ -42,6 +46,32 @@ class LogDependencyProvider extends SprykerLogDependencyProvider
             new RequestProcessorPlugin(),
             new ResponseProcessorPlugin(),
             new GuzzleBodyProcessorPlugin(),
+        ];
+    }
+
+    /**
+     * @return list<\Spryker\Shared\Log\Dependency\Plugin\LogProcessorPluginInterface>
+     */
+    protected function getYvesSecurityAuditLogProcessorPlugins(): array
+    {
+        return [
+            new CurrentCustomerDataRequestProcessorPlugin(),
+            new PsrLogMessageProcessorPlugin(),
+            new EnvironmentProcessorPlugin(),
+            new ServerProcessorPlugin(),
+            new AuditLogRequestProcessorPlugin(),
+            new ResponseProcessorPlugin(),
+            new AuditLogMetaDataProcessorPlugin(),
+        ];
+    }
+
+    /**
+     * @return list<\Spryker\Shared\Log\Dependency\Plugin\LogHandlerPluginInterface>
+     */
+    protected function getYvesSecurityAuditLogHandlerPlugins(): array
+    {
+        return [
+            new AuditLogTagFilterBufferedStreamHandlerPlugin(),
         ];
     }
 }
