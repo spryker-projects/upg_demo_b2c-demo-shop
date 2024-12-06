@@ -11,6 +11,7 @@ use SprykerShop\Yves\CheckoutPage\CheckoutPageConfig as SprykerCheckoutPageConfi
 
 class CheckoutPageConfig extends SprykerCheckoutPageConfig
 {
+    public const SUCCESS_STEP_ESCAPE_ROUTE = 'checkout-error';
     /**
      * @return array<string>
      */
@@ -20,5 +21,17 @@ class CheckoutPageConfig extends SprykerCheckoutPageConfig
             'en_US' => '/en/gtc',
             'de_DE' => '/de/agb',
         ];
+    }
+    /**
+     * Specification:
+     * - Returns escape route for success step.
+     *
+     * @api
+     *
+     * @return string|null
+     */
+    public function getSuccessStepEscapeRoute() : ?string
+    {
+        return static::SUCCESS_STEP_ESCAPE_ROUTE;
     }
 }

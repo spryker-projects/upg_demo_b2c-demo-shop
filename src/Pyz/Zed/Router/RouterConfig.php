@@ -23,4 +23,18 @@ class RouterConfig extends SprykerRouterConfig
 
         return array_filter($controllerDirectories, 'glob');
     }
+    /**
+     * Specification:
+     * - Returns whether the Router cache is enabled.
+     *
+     * @api
+     *
+     * @deprecated Cache will be enabled by default in next major.
+     *
+     * @return bool
+     */
+    public function isRoutingCacheEnabled() : bool
+    {
+        return true;
+    }
 }

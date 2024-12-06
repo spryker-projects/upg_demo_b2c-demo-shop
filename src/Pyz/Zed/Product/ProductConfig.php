@@ -74,4 +74,16 @@ class ProductConfig extends SprykerProductConfig
             ProductSearchEvents::ENTITY_SPY_PRODUCT_SEARCH_UPDATE,
         ]);
     }
+    /**
+     * Specification:
+     * - Defines if full locale name in URL is enabled.
+     *
+     * @api
+     *
+     * @return bool
+     */
+    public function isFullLocaleNamesInUrlEnabled() : bool
+    {
+        return true;
+    }
 }

@@ -358,6 +358,7 @@ class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
 
             new DeleteExpiredPushNotificationSubscriptionConsole(),
             new SendPushNotificationConsole(),
+            new Spryker\Zed\Oms\Communication\Console\ProcessCacheWarmUpConsole(),
         ];
 
         $propelCommands = $container->getLocator()->propel()->facade()->getConsoleCommands();
@@ -456,6 +457,7 @@ class ConsoleDependencyProvider extends SprykerConsoleDependencyProvider
     {
         $eventSubscriber = parent::getEventSubscriber($container);
         $eventSubscriber[] = new MonitoringConsolePlugin();
+        $eventSubscriber[] = new Spryker\Zed\Synchronization\Communication\Plugin\Console\DirectSynchronizationConsolePlugin();
 
         return $eventSubscriber;
     }

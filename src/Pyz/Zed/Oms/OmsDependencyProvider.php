@@ -105,6 +105,7 @@ class OmsDependencyProvider extends SprykerOmsDependencyProvider
             $commandCollection->add(new SendCapturePaymentMessageCommandPlugin(), 'Payment/Capture');
             $commandCollection->add(new SendRefundPaymentMessageCommandPlugin(), 'Payment/Refund');
             $commandCollection->add(new SendCancelPaymentMessageCommandPlugin(), 'Payment/Cancel');
+            $commandCollection->add(new Spryker\Zed\Refund\Communication\Plugin\Oms\RefundCommandPlugin(), 'Payment/Refund/Confirm');
 
             return $commandCollection;
         });
